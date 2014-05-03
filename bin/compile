@@ -13,7 +13,8 @@ echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "BUILD_DIR:"
 echo $BUILD_DIR
 echo "ls:"
-ls
+ls ..
+echo "ls ..:"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 mv siege-3.0.2/src/siege $BUILD_DIR
