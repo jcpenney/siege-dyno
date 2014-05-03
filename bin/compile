@@ -2,7 +2,7 @@
 
 echo "compile!"
 
-wget http://www.joedog.org/pub/siege/siege-3.0.2.tar.gz
+curl -O http://www.joedog.org/pub/siege/siege-3.0.2.tar.gz
 tar zxvf siege-3.0.2.tar.gz
 cd siege-3.0.2
 ./configure
