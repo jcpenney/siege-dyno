@@ -8,6 +8,6 @@ cd siege-3.0.2
 ./configure
 make
 cd ..
-mv siege-3.0.2/src/siege .
+mv siege-3.0.2/src/siege $BUILD_DIR
 rm -rf siege-3.0.2
 rm -rf siege-3.0.2.tar.gz
