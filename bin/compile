@@ -13,5 +13,7 @@ cd ..
 
 mv siege-3.0.2/src/siege $BUILD_DIR
 mv siege-3.0.2/utils/siege.config $BUILD_DIR
+mv .siegerc $BUILD_DIR
+
 rm -rf siege-3.0.2
 rm -rf siege-3.0.2.tar.gz
