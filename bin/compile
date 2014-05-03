@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 echo "compile!"
+echo "BUILD_DIR IS"
+echo $BUILD_DIR
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 curl -O http://www.joedog.org/pub/siege/siege-3.0.2.tar.gz
 tar zxvf siege-3.0.2.tar.gz
@@ -8,14 +11,6 @@ cd siege-3.0.2
 ./configure
 make
 cd ..
-
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-echo "BUILD_DIR:"
-echo $BUILD_DIR
-echo "ls:"
-ls ..
-echo "ls ..:"
-echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 mv siege-3.0.2/src/siege $BUILD_DIR
 rm -rf siege-3.0.2
