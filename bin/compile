@@ -13,7 +13,26 @@ cd ..
 
 mv siege-3.0.2/src/siege $BUILD_DIR
 mv siege-3.0.2/utils/siege.config $BUILD_DIR
-mv .siegerc $BUILD_DIR
+
+cat > $BUILD_DIR/.siegerc << "EOF"
+verbose = true
+quiet = false
+gmethod = HEAD
+show-logfile = true
+logging = true
+protocol = HTTP/1.1
+chunked = true
+cache = false
+connection = close
+concurrent = 15
+delay = 1
+internet = false
+benchmark = false
+accept-encoding = gzip
+spinner = false
+unique = true
+EOF
+
 
 rm -rf siege-3.0.2
 rm -rf siege-3.0.2.tar.gz
